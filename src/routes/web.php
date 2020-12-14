@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/sass', function () {
+  return view('sass');
 });
+
+Route::get('/', 'postscontroller@index')->name('top');
