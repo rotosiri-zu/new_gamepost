@@ -9,11 +9,10 @@
 </head>
 <body>
   <header>
-    <div class="header_title">
-      <a href="{{url('')}}">ゲームソフト投稿サイト</a>
-    </div>
-
-    <div id="header_maun">
+    <div id="header_nav">
+      <div class="header_title">
+        <a href="{{url('')}}">ゲームソフト投稿サイト</a>
+      </div>
       <div class="toggle">
         <span></span>
         <span></span>
