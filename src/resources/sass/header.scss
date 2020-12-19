@@ -1,9 +1,15 @@
 #header_nav {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 1200px;
+  nav {
+    ul {
+      display: flex;
+    }
+  }
 }
 .header_title {
-  margin-top: 28px;
   a {
     text-decoration: none;
     color: #30b5ef;

@@ -1,10 +1,12 @@
 #header_nav {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-.header_title {
-  margin-top: 28px;
+#header_nav nav ul {
+  display: flex;
 }
 
 .header_title a {
