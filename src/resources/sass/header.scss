@@ -1,17 +1,27 @@
-#header_nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1200px;
-  nav {
-    ul {
+@media screen and (min-width: 300px) {
+  header {
+    background: rgba(34, 38, 46, 0.9);
+    #header_nav {
+      padding: 2px 10px 2px 8px;
       display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 1200px;
+      nav {
+        ul {
+          display: flex;
+          a {
+            color: white;
+            padding: 0 20px;
+          }
+        }
+      }
     }
-  }
-}
-.header_title {
-  a {
-    text-decoration: none;
-    color: #30b5ef;
+    .header_title {
+      a {
+        text-decoration: none;
+        color: #30b5ef;
+      }
+    }
   }
 }
