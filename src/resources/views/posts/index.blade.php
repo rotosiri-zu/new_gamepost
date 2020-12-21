@@ -27,11 +27,26 @@
             <a>投稿画面メニューへ</a>
           </li>
           <!-- <li>
+            <a>ログアウト</a>
+          </li> -->
+          <!-- <li>
             <a>マイページ</a>
           </li> -->
+          <li>
+            <a>ログイン</a>
+          </li>
+          <li>
+            <a>新規登録</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <div id="container" class="top">
+    <main id="main" class="content">
+  
+    </main> 
+  </div>
 </body>
 </html>
