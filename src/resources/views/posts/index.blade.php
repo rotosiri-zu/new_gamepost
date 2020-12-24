@@ -52,7 +52,9 @@
         </div>
       </div>
       <div class="main-body">
-
+        <div class="card">
+          <img>
+        </div>
       </div>
     </main> 
   </div>

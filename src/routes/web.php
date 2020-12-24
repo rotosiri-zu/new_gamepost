@@ -16,3 +16,7 @@ Route::get('/sass', function () {
 });
 
 Route::get('/', 'postscontroller@index')->name('top');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
