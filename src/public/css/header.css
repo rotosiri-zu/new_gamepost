@@ -28,16 +28,32 @@
 
 @media screen and (min-width: 300px) {
   #container {
+    padding: 14px 18px 18px;
     margin-top: 4px;
+    width: 100%;
   }
 
   #container #main {
-    margin: 0 auto;
-    max-width: 1200px;
+    padding-left: 200px;
   }
 
-  #container #main #meun {
-    width: 320px;
+  #container #main #sidecontent {
+    padding-top: 10px;
+    width: 200px;
+    margin-left: -200px;
+    float: left;
+  }
+
+  #container #main #sidecontent #sidemeun {
+    padding-left: 10px;
+    padding-right: 6px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+  }
+
+  #container #main .main-body {
+    float: left;
+    padding: 10px 18px 20px 20px;
   }
 }
 
