@@ -22,7 +22,7 @@
       <nav>
         <ul>
           <li>
-            <a>トップページ</a>
+            <a href="{{url('')}}">トップページ</a>
           </li>
           <li>
             <a>投稿画面メニューへ</a>
@@ -34,10 +34,10 @@
             <a>マイページ</a>
           </li> -->
           <li>
-            <a>ログイン</a>
+            <a href="{{url('/login')}}">ログイン</a>
           </li>
           <li>
-            <a>新規登録</a>
+            <a href="{{url('/register')}}">新規登録</a>
           </li>
         </ul>
       </nav>
@@ -48,7 +48,7 @@
     <main id="main">
       <div id="sidecontent">
         <div id="sidemeun">
-          <h1>テスト</h1>
+          <h3>テスト</h3>
         </div>
       </div>
       <div class="main-body">
