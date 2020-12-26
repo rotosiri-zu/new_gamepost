@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ asset('/css/_reset.css')}}">
   <link rel="stylesheet" href="{{ asset('/css/app.css')}}">
-  <link rel="stylesheet" href="{{ asset('/css/header.css')}}">
   <title>ゲームソフト投稿サイト</title>
 </head>
 <body>
@@ -45,7 +44,7 @@
   </header>
 
   <div id="container">
-    <main id="main">
+    <div id="main">
       <div id="sidecontent">
         <div id="sidemeun">
           <h3>テスト</h3>
@@ -56,7 +55,7 @@
           <img>
         </div>
       </div>
-    </main> 
+    </div> 
   </div>
 </body>
 </html>

@@ -6,3 +6,15 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+@import 'header';
+@import 'main';
+@import 'reset';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+}
