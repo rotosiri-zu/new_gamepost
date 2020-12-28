@@ -52,7 +52,11 @@
       </div>
       <div class="main-body">
         <div class="card">
-          <img>
+        <img>
+          <div class="card-body">
+            <h5 class="card-title">
+            </h5>
+          </div>        
         </div>
       </div>
     </div> 
