@@ -52,7 +52,7 @@
       </div>
       <div class="main-body">
         <div class="card">
-        <img>
+        <img src="" alt="..." class="img-thumbnail">
           <div class="card-body">
             <h5 class="card-title">
             </h5>
