@@ -51,13 +51,15 @@
         </div>
       </div>
       <div class="main-body">
+        @foreach($posts as $post)
         <div class="card">
-        <img src="" alt="..." class="img-thumbnail">
+        <img src="{{$post->image}}" alt="..." class="img-thumbnail">
           <div class="card-body">
             <h5 class="card-title">
             </h5>
-          </div>        
+          </div> 
         </div>
+        @endforeach
       </div>
     </div> 
   </div>
