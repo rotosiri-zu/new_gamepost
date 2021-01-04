@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Post;
+
 class PostsTableSeeder extends Seeder
 {
     /**
@@ -11,8 +12,6 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Post::class, 1)->create()->each(function ($posts){
-            $posts->users()->save(factory(app\User::class)->make());
-        });
+        factory(Post::class, 1)->create();
     }
 }

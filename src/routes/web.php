@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +19,8 @@ Route::get('/sass', function () {
 });
 
 Route::get('/', 'postscontroller@index')->name('top');
+
+Route::resource('posts','postsController', ['only' => ['create', 'store']]);
 
 Auth::routes();
 

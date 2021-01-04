@@ -24,7 +24,7 @@
             <a href="{{url('')}}">トップページ</a>
           </li>
           <li>
-            <a>投稿画面メニューへ</a>
+            <a href="{{route('posts.create')}}">投稿画面メニューへ</a>
           </li>
           <!-- <li>
             <a>ログアウト</a>
@@ -56,8 +56,13 @@
         <img src="{{$post->image}}" alt="..." class="img-thumbnail">
           <div class="card-body">
             <h5 class="card-title">
+              {{$post->title}}
             </h5>
-          </div> 
+            <span class="card-price">¥{{$post->price}}</span>
+            <div class="border border-white mt-4">
+              <a href="{{}}" class="btn btn-primary">詳細へ</a>
+            </div>
+          </div>
         </div>
         @endforeach
       </div>
