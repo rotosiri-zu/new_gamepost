@@ -26,6 +26,7 @@ class postscontroller extends Controller
         $post->title = $request->title;
         $post->genre = $request->genre;
         $post->price = $request->price;
+        $post->text = $request->text;
         $post->save();
         return redirect()->route('top');
     }
