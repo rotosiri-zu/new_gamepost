@@ -1,72 +1,31 @@
-<!DOCTYPE html>
-<html lang="js">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ asset('/css/_reset.css')}}">
-  <link rel="stylesheet" href="{{ asset('/css/app.css')}}">
-  <title>ゲームソフト投稿サイト</title>
-</head>
-<body>
-  <header>
-    <div id="header_nav">
-      <div class="header_title">
-        <a href="{{url('')}}">ゲームソフト投稿サイト</a>
-      </div>
-      <div class="toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="{{url('')}}">トップページ</a>
-          </li>
-          <li>
-            <a href="{{route('posts.create')}}">投稿画面メニューへ</a>
-          </li>
-          <!-- <li>
-            <a>ログアウト</a>
-          </li> -->
-          <!-- <li>
-            <a>マイページ</a>
-          </li> -->
-          <li>
-            <a href="{{url('/login')}}">ログイン</a>
-          </li>
-          <li>
-            <a href="{{url('/register')}}">新規登録</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+@extends('layouts')
 
-  <div id="container">
-    <div id="main">
-      <div id="sidecontent">
-        <div id="sidemeun">
-          <h3>テスト</h3>
-        </div>
+@section('content')
+
+<div id="container">
+  <div id="main">
+    <div id="sidecontent">
+      <div id="sidemeun">
+        <h3>テスト</h3>
       </div>
-      <div class="main-body">
-        @foreach($posts as $post)
-        <div class="card">
-        <img src="{{$post->image}}" alt="..." class="img-thumbnail">
-          <div class="card-body">
-            <h5 class="card-title">
-              {{$post->title}}
-            </h5>
-            <span class="card-price">¥{{$post->price}}</span>
-            <div class="border border-white mt-4">
-              <a href="{{}}" class="btn btn-primary">詳細へ</a>
-            </div>
+    </div>
+    <div class="main-body">
+      @foreach($posts as $post)
+      <div class="card">
+      <img src="{{$post->image}}" alt="..." class="img-thumbnail">
+        <div class="card-body">
+          <h5 class="card-title">
+            {{$post->title}}
+          </h5>
+          <span class="card-price">¥{{$post->price}}</span>
+          <div class="border border-white mt-4">
+            <a href="{{}}" class="btn btn-primary">詳細へ</a>
           </div>
         </div>
-        @endforeach
       </div>
-    </div> 
-  </div>
-</body>
-</html>
+      @endforeach
+    </div>
+  </div> 
+</div>
+
+@endsection('content')

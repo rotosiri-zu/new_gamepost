@@ -1,4 +1,8 @@
-<div class="container mt-4">
+@extends('layouts')
+
+@section('content')
+
+  <div class="container mt-4">
     <div class="border p-4">
       <h1 class="h5 mb-4">
         投稿の新規作成
@@ -31,3 +35,5 @@
       </form>
     </div>
   </div>
+
+@endsection('content')
