@@ -24,6 +24,10 @@
             <span class="form-group-text">¥</span>
             <input id="price" name="price" type="text">
           </div>
+          <div class="form-group">
+            <label for="title">ゲームの説明文</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
 
           <a href="{{route('top')}}">キャンセル</a>
 
