@@ -30,4 +30,10 @@ class postscontroller extends Controller
         $post->save();
         return redirect()->route('top');
     }
+
+    public function show($post_id)
+    {
+        $post = Post::findOrFail($post_id);
+        return view('posts.show', ['post' => $post]);
+    }
 }
