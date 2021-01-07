@@ -16,6 +16,7 @@ class CreatePlatformTable extends Migration
         Schema::create('platform', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('platform_name');
+            $table->nestedSet();
             $table->timestamps();
         });
     }
