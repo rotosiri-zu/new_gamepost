@@ -10968,13 +10968,6 @@ a.text-dark:focus {
     margin-top: 100px;
     margin-left: 100px;
     width: 350px;
-  }
-
-  #container #main .card .card-title {
-    font-size: 30px;
-  }
-
-  #container #main .card .card-title .card-price {
     font-size: 30px;
   }
 }
