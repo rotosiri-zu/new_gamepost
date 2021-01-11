@@ -30,7 +30,7 @@ class PlatformsTableSeeder extends Seeder
         $interpreter->addObserver(function(array $row) {
             // 登録処理
             $genre = \App\Platform::create([
-                'id' => $row[0] ,
+                'code' => $row[0] ,
                 'platform_name' => $row[1] ,
                 'parent_id' => $row[2] 
                 ]);
