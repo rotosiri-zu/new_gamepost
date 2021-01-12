@@ -29,15 +29,15 @@ class PlatformsTableSeeder extends Seeder
         $interpreter = new Interpreter();
         $interpreter->addObserver(function(array $row) {
             // 登録処理
-            $genre = \App\Platform::create([
-                'code' => $row[0] ,
-                'platform_name' => $row[1] ,
-                'parent_id' => $row[2] 
+            $platform = \App\Platform::create([
+                'code' => $row[0],
+                'platform_name' => $row[1] 
                 ]);
         });
 
         $lexer->parse(app_path() . self::CSV_FILENAME, $interpreter);
 
         $this->command->info('[End] import data.');
+
     }
 }

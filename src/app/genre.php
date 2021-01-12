@@ -11,7 +11,7 @@ class genre extends Model
         'genre_name'
     ];
 
-    public function genre()
+    public function post()
     {
         return $this->hasMany('App\Post');
     }

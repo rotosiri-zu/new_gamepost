@@ -30,5 +30,8 @@ class CreatePlatformTable extends Migration
     public function down()
     {
         Schema::dropIfExists('platform');
+        Schema::table('table', function (Blueprint $table) {
+            $table->dropNestedSet();
+        });
     }
 }
