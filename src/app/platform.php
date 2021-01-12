@@ -8,16 +8,16 @@ use Kalnoy\Nestedset\NodeTrait;
 class platform extends Model
 {
     use NodeTrait;
+    protected $table = 'platform';
 
-    protected $guarded = [
-        'id',
-        'created_at',
-        'updated_at',
-        'depth',
+    protected $fillable = [
+        'code',
+        'platform_name'
       ];
-      
-    public function platform()
+
+    public function post()
     {
         return $this->hasMany('App\Post');
     }
+
 }
