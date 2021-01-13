@@ -15,9 +15,8 @@ class CreatePlatformTable extends Migration
     {
         Schema::create('platform', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('code');
+            $table->integer('platform_id');
             $table->string('platform_name');
-            $table->nestedSet();
             $table->timestamps();
         });
     }
@@ -30,8 +29,5 @@ class CreatePlatformTable extends Migration
     public function down()
     {
         Schema::dropIfExists('platform');
-        Schema::table('table', function (Blueprint $table) {
-            $table->dropNestedSet();
-        });
     }
 }
