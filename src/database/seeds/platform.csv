@@ -1,41 +1,41 @@
-1,任天堂
-2,NECホームエレクトロニクス
-3,セガ・エンタープライゼス
-4,バンダイ
-5,ソニー・インタラクティブエンタテインメント
-6,マイクロソフト
-7,SNK
-8,PCゲーム
-9,PCゲーム(R18)
-10,ファミリーコンピュータ‎
-11,スーパーファミコン
-12,NINTENDO64
-13,バーチャルボーイ
-14,ゲームキューブ
-15,Wii
-16,"Wii U"
-17,"Nintendo Switch"
-18,ゲームボーイ
-19,ゲームボーイアドバンス
-20,ニンテンドーDS
-21,ニンテンドー3DS
-22,PCエンジン
-23,PC-FX
-24,メガドライブ
-25,セガサターン
-26,ドリームキャスト
-27,ゲームギア
-28,ワンダースワン
-29,PlayStation
-30,PlayStation2
-31,PlayStation3
-32,PlayStation4
-33,PlayStation5
-34,"playstation portable"
-35,"PlayStation vita"
-36,Xbox
-37,Xbox360
-38,"Xbox One"
-39,NEOGEO
-40,Windows
-41,Windows
+1,任天堂,
+2,NECホームエレクトロニクス,
+3,セガ・エンタープライゼス,
+4,バンダイ,
+5,ソニー・インタラクティブエンタテインメント,
+6,マイクロソフト,
+7,SNK,
+8,PCゲーム,
+9,PCゲーム(R18),
+10,ファミリーコンピュータ‎,1
+11,スーパーファミコン,1
+12,NINTENDO64,1
+13,バーチャルボーイ,1
+14,ゲームキューブ,1
+15,Wii,1
+16,"Wii U",1
+17,"Nintendo Switch",1
+18,ゲームボーイ,1
+19,ゲームボーイアドバンス,1
+20,ニンテンドーDS,1
+21,ニンテンドー3DS,1
+22,PCエンジン,2
+23,PC-FX,2
+24,メガドライブ,3
+25,セガサターン,3
+26,ドリームキャスト,3
+27,ゲームギア,3
+28,ワンダースワン,4
+29,PlayStation,5
+30,PlayStation2,5
+31,PlayStation3,5
+32,PlayStation4,5
+33,PlayStation5,5
+34,"playstation portable",5
+35,"PlayStation vita",5
+36,Xbox,6
+37,Xbox360,6
+38,"Xbox One",6
+39,NEOGEO,7
+40,Windows,8
+41,Windows,9

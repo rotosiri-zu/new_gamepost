@@ -28,7 +28,7 @@ class GenresTableSeeder extends Seeder
         $interpreter->addObserver(function(array $row) {
             // 登録処理
             $genre = \App\Genre::create([
-                    'code' => $row[0], //
+                    'genre_id' => $row[0], //
                     'genre_name' => $row[1] //
                ]);
         });

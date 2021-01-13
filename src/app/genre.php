@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class genre extends Model
 {
     protected $fillable = [
-        'code',
+        'genre_id',
         'genre_name'
     ];
 
