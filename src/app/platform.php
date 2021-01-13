@@ -3,15 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Kalnoy\Nestedset\NodeTrait;
 
 class platform extends Model
 {
-    use NodeTrait;
     protected $table = 'platform';
 
     protected $fillable = [
-        'code',
+        'platform_id',
         'platform_name'
       ];
 
