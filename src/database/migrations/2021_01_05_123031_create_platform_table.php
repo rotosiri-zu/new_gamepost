@@ -17,6 +17,7 @@ class CreatePlatformTable extends Migration
             $table->bigIncrements('id');
             $table->integer('platform_id');
             $table->string('platform_name');
+            $table->string('ancestry');
             $table->timestamps();
         });
     }
