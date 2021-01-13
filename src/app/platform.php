@@ -10,7 +10,8 @@ class platform extends Model
 
     protected $fillable = [
         'platform_id',
-        'platform_name'
+        'platform_name',
+        'ancestry'
       ];
 
     public function post()
