@@ -11,6 +11,8 @@ $factory->define(Post::class, function (Faker $faker) {
         'image' => 'https://m.media-amazon.com/images/I/71nXaHHRe6L._AC_UY436_FMwebp_QL65_.jpg',
         'price' => 5980,
         'text' => 'test',
-        'user_id' => 1
+        'user_id' => 1,
+        'genre_id' => 1,
+        'platform_id' => 1
     ];
 });
