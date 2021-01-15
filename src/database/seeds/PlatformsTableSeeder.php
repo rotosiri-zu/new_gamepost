@@ -10,7 +10,7 @@ class PlatformsTableSeeder extends Seeder
 {
 
     const CSV_FILENAME = '/../database/seeds/platform.csv'; 
-    
+
     /**
      * Run the database seeds.
      *
@@ -30,7 +30,7 @@ class PlatformsTableSeeder extends Seeder
         $interpreter->addObserver(function(array $row) {
             // 登録処理
             $platform = \App\Platform::create([
-                'platform_id' => $row[0],
+                'code' => $row[0],
                 'platform_name' => $row[1] ,
                 'ancestry' => $row[2]
                 ]);
@@ -39,6 +39,5 @@ class PlatformsTableSeeder extends Seeder
         $lexer->parse(app_path() . self::CSV_FILENAME, $interpreter);
 
         $this->command->info('[End] import data.');
-
     }
 }

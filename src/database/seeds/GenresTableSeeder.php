@@ -8,7 +8,9 @@ use Goodby\CSV\Import\Standard\LexerConfig;
 
 class GenresTableSeeder extends Seeder
 {
+
     const CSV_FILENAME = '/../database/seeds/genre.csv'; 
+
     /**
      * Run the database seeds.
      *
@@ -28,7 +30,7 @@ class GenresTableSeeder extends Seeder
         $interpreter->addObserver(function(array $row) {
             // 登録処理
             $genre = \App\Genre::create([
-                    'genre_id' => $row[0], //
+                    'code' => $row[0], //
                     'genre_name' => $row[1] //
                ]);
         });
