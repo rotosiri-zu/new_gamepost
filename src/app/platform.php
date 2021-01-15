@@ -4,12 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class platform extends Model
+class Platform extends Model
 {
-    protected $table = 'platform';
 
     protected $fillable = [
-        'platform_id',
+        'code',
         'platform_name',
         'ancestry'
       ];
@@ -18,5 +17,4 @@ class platform extends Model
     {
         return $this->hasMany('App\Post');
     }
-
 }

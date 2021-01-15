@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/sass', function () {
-  return view('sass');
-});
-
+    return view('sass');
+  });
+  
 Route::get('/', 'postscontroller@index')->name('top');
 
 Route::resource('posts','postsController', ['only' => ['create', 'store', 'show']]);
@@ -25,3 +25,4 @@ Route::resource('posts','postsController', ['only' => ['create', 'store', 'show'
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+  

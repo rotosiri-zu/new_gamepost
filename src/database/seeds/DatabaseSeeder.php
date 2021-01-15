@@ -15,7 +15,6 @@ class DatabaseSeeder extends Seeder
             UsersTableSeeder::class,
             PostsTableSeeder::class,
             GenresTableSeeder::class,
-            PlatformsTableSeeder::class
-        ]);
+            PlatformsTableSeeder::class]);
     }
 }

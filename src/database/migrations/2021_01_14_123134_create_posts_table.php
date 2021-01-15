@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePlatformTable extends Migration
+class CreatePostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,15 @@ class CreatePlatformTable extends Migration
      */
     public function up()
     {
-        Schema::create('platform', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('platform_id');
-            $table->string('platform_name');
-            $table->string('ancestry');
+            $table->string('title');
+            $table->text('image');
+            $table->integer('price');
+            $table->text('text');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('genre_id');
+            $table->unsignedBigInteger('platform_id');
             $table->timestamps();
         });
     }
@@ -29,6 +33,6 @@ class CreatePlatformTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('platform');
+        Schema::dropIfExists('posts');
     }
 }

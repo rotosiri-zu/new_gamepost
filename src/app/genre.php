@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class genre extends Model
+class Genre extends Model
 {
     protected $fillable = [
-        'genre_id',
+        'code',
         'genre_name'
     ];
 
