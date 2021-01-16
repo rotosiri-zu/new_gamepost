@@ -13,17 +13,17 @@ class Post extends Model
         'text',
     ];
 
-    public function user()
+    public function users()
     {
         return $this->belongsTo('App\User');
     }
     
-    public function genre()
+    public function genres()
     {
         return $this->belongsTo('App\Genre');
     }
 
-    public function platform()
+    public function platforms()
     {
         return $this->belongsTo('App\Platform');
     }
