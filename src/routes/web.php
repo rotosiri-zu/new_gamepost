@@ -19,6 +19,7 @@ Route::get('/sass', function () {
   });
   
 Route::get('/', 'postscontroller@index')->name('top');
+Route::get('/table_read_api', 'postscontroller@create');
 
 Route::resource('posts','postsController', ['only' => ['create', 'store', 'show']]);
 

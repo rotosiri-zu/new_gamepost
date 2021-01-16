@@ -15,7 +15,9 @@ class PostsController extends Controller
 
   public function create()
   {
-      return view('posts.create');
+    $list = \App\platform::all();
+    return response()->json(['lists' => $list]);
+    return view('posts.create');
   }
 
   public function store(Request $request)
