@@ -21,12 +21,20 @@
             <input id="title" name="title" type="text">
           </div>
           <div class="form-group">
+            <label for="genre">ジャンル</label>
+            <select id="genre_id" name="genre_id" class="form-control">
+          @foreach ($genres as $id => $genre_name)
+              <option value="{{$id}}">{{$id}} {{$genre_name}}</option>
+          @endforeach
+            </select>
+          </div>
+          <div class="form-group">
             <span class="form-group-text">¥</span>
             <input id="price" name="price" type="text">
           </div>
           <div class="form-group">
             <label for="title">ゲームの説明文</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea name="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
 
           <a href="{{route('top')}}">キャンセル</a>
