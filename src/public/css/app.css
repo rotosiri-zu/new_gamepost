@@ -10962,6 +10962,7 @@ a.text-dark:focus {
     float: left;
     padding: 10px 18px 20px 20px;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   #container #main .card {

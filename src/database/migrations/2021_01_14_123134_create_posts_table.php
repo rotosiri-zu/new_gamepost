@@ -19,9 +19,9 @@ class CreatePostsTable extends Migration
             $table->text('image');
             $table->integer('price');
             $table->text('text');
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('genre_id');
-            $table->unsignedBigInteger('platform_id');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('genre_id')->nullable();
+            $table->unsignedBigInteger('platform_id')->nullable();
             $table->timestamps();
             
             $table->foreign('user_id')->references('id')->on('users');
