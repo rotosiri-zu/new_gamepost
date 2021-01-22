@@ -28,7 +28,9 @@
           @endforeach
             </select>
           </div>
-          <platform-componet></platform-componet>
+          <div id="app">
+            <platform-componet></platform-componet>
+          </div>  
           <div class="form-group">
             <span class="form-group-text">¥</span>
             <input id="price" name="price" type="text">

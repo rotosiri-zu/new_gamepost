@@ -8,6 +8,8 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import PlatformComponent from './components/PlatformComponent'
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -29,5 +31,8 @@ Vue.component('platform-componet', require('./components/PlatformComponent.vue')
  */
 
 const app = new Vue({
-    el: ['#app','#platform']
+    el: '#app',
+    components: {
+        PlatformComponent,
+    }
 });

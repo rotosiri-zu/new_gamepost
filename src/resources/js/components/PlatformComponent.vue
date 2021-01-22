@@ -1,5 +1,5 @@
 <template>
-<div id="paltform">
+<div>
   <div class="form-group">
     <label for="paltform">プラットフォーム</label>
     <select id="paltform_id" name="paltform_id" class="form-control" v-model="selected">
