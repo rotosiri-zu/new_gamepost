@@ -17,5 +17,7 @@
 </template>
 
 <script>
-  
+  export default {
+    props: ["",]
+  }
 </script>
